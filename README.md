@@ -43,25 +43,25 @@ In `assets/images/`. To swap one, save the new photo with the same file name.
 From this folder run `python -m http.server 8080` and open http://localhost:8080.
 
 ## Color palette
-All colors are set at the top of `assets/css/styles.css`.
 
-| Color | Hex | CSS name | Use |
-|---|---|---|---|
-| Cream | `#FCF8F2` | `--cream` | Page background |
-| Linen | `#F5ECE0` | `--linen` | Soft section backgrounds |
-| Sand | `#EBDCC8` | `--sand` | Outline button borders |
-| Border | `#E6D9C8` | `--line` | Card borders and divider lines |
-| White | `#FFFFFF` | `--white` | Cards |
-| Clay | `#A9532F` | `--clay` | Main buttons and accents |
-| Dark clay | `#8C4325` | `--clay-dark` | Main button hover |
-| Soft clay | `#F3DFD3` | `--clay-soft` | Icon backgrounds and warm notices |
-| Apricot | `#E8A87C` | `--apricot` | Highlights and focus outlines |
-| Harbor blue | `#2E5470` | `--blue` | Portal button, links and icons |
-| Deep blue | `#1F3B50` | `--blue-dark` | Headings and top bar |
-| Soft blue | `#E4EDF3` | `--blue-soft` | Icon backgrounds and notices |
-| Footer navy | `#1A3245` | none | Footer background |
-| Sage | `#7E9A82` | `--sage` | Small natural accents |
-| Charcoal | `#34302D` | `--ink` | Body text |
-| Muted brown | `#6B625B` | `--muted` | Secondary text |
+### Primary
+| Color | Hex | Use |
+|---|---|---|
+| Cream | `#FCF8F2` | Page background |
+| Clay | `#A9532F` | Main buttons and accents |
+| Deep blue | `#1F3B50` | Headings and top bar |
+| Harbor blue | `#2E5470` | Patient Portal button and links |
+| Apricot | `#E8A87C` | Highlights |
+
+### Secondary
+| Color | Hex | Use |
+|---|---|---|
+| Linen | `#F5ECE0` | Soft section backgrounds |
+| Soft clay | `#F3DFD3` | Warm notices and icon backgrounds |
+| Soft blue | `#E4EDF3` | Notices and icon backgrounds |
+| Sage | `#7E9A82` | Small natural accents |
+| Charcoal | `#34302D` | Body text |
+
+A few small working shades, such as borders and hover colors, are listed at the top of `assets/css/styles.css`.
 
 Fonts: **Fraunces** (headings) and **Nunito Sans** (body), both from Google Fonts.
