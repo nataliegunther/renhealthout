@@ -132,7 +132,7 @@ em.soft { font-style: italic; color: var(--clay); }
 
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--blue-dark); }
 .brand:hover { color: var(--blue-dark); }
-.brand-mark { width: 44px; height: 44px; flex: none; }
+.brand-mark { width: auto; height: 50px; flex: none; }
 .brand-text { display: flex; flex-direction: column; line-height: 1.1; }
 .brand-name { font-family: var(--font-display); font-size: 1.3rem; font-weight: 500; }
 .brand-sub { font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
