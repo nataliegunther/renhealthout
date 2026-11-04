@@ -45,13 +45,6 @@
 
   wire("[data-portal-link]", cfg.portalUrl,
     "Our patient portal link is coming soon. Please call 402-249-0377 for help.");
-  wire("[data-weave-form]", cfg.weaveFormUrl,
-    "Our secure message form is coming soon. Please call 402-249-0377.");
-
-  /* Hide the "coming soon" note on the contact page once the form is live */
-  if (cfg.weaveFormUrl) {
-    document.querySelectorAll("[data-form-pending]").forEach(function (el) { el.hidden = true; });
-  }
 
   /* ---------- Weave Text Connect chat bubble ---------- */
   if (cfg.weaveTextConnectSrc) {

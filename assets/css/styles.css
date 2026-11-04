@@ -293,7 +293,7 @@ em.soft { font-style: italic; color: var(--clay); }
   display: grid; place-items: center;
   font-family: var(--font-display); font-size: 2.2rem; color: var(--blue);
 }
-.provider .creds { color: var(--clay); font-weight: 700; font-size: .9rem; letter-spacing: .04em; margin: -4px 0 10px; }
+.creds { color: var(--clay); font-weight: 700; font-size: .9rem; letter-spacing: .04em; margin: -4px 0 10px; }
 @media (max-width: 520px) { .provider { grid-template-columns: 1fr; } }
 
 .tags { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; margin: 0; }
@@ -355,11 +355,6 @@ em.soft { font-style: italic; color: var(--clay); }
 .hours-table td:last-child { text-align: right; }
 
 .form-card { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: clamp(24px, 4vw, 40px); }
-.form-placeholder {
-  border: 2px dashed var(--sand); border-radius: var(--radius); padding: 28px; text-align: center; margin: 20px 0;
-  background: var(--cream);
-}
-.form-placeholder p { color: var(--muted); margin-bottom: 1.2em; }
 .notice {
   display: flex; gap: 12px; background: var(--blue-soft); color: var(--blue-dark);
   border-radius: var(--radius); padding: 16px 18px; font-size: .92rem; line-height: 1.55; margin-top: 16px;
@@ -413,7 +408,10 @@ em.soft { font-style: italic; color: var(--clay); }
 
 /* ---------- Photos ---------- */
 .arch img, .photo img { width: 100%; height: 100%; object-fit: cover; }
-.arch img { object-position: 62% center; }
+.arch img, .photo--arch img { object-position: 50% 18%; }
+.arch-card { text-decoration: none; color: inherit; }
+.arch-card small { display: block; line-height: 1.35; margin-top: 4px; }
+.arch-card:hover strong { color: var(--clay); }
 .arch::after {
   content: ""; position: absolute; inset: 0;
   background: linear-gradient(180deg, rgba(46, 84, 112, 0) 55%, rgba(31, 59, 80, .18));

@@ -9,20 +9,12 @@ A plain HTML/CSS website (no build step) designed to be hosted free on **GitHub 
 | `about.html` | About Jodi + counseling team |
 | `services.html` | Services |
 | `insurance.html` | Insurance & FAQ |
-| `contact.html` | Contact, map, Weave form, portal |
+| `contact.html` | Contact, map, portal |
 
-## Turning on the Patient Portal and Weave form
-Open **`assets/js/site-config.js`** and paste the links between the quotes:
+## Patient Portal link
+The InSync sign-in address is set in **`assets/js/site-config.js`** (`portalUrl`). Change it there and every Patient Portal button updates.
 
-```js
-portalUrl: "https://XXXXintouch.insynchcs.com/Login",   // from InSync
-weaveFormUrl: "https://...",                            // Weave Digital Form share link
-weaveTextConnectSrc: ""                                 // optional Weave chat bubble (the widget.js address)
-```
-
-Until a link is filled in, those buttons show a friendly "coming soon, please call" message instead of breaking.
-
-If Weave gives you **embed code** (an `<iframe>`) instead of a link, paste it into `contact.html` where it says `WEAVE FORM PLACEHOLDER`.
+That file also has an optional `weaveTextConnectSrc` setting for a Weave chat bubble, which is currently blank.
 
 ## Adding the logo (when it's ready)
 1. Save it as `assets/images/logo.png` (transparent background works best).
