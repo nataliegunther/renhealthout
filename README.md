@@ -17,7 +17,7 @@ The InSync sign-in address is set in **`assets/js/site-config.js`** (`portalUrl`
 That file also has an optional `weaveTextConnectSrc` setting for a Weave chat bubble, which is currently blank.
 
 ## Logo
-The logo is `assets/images/logo.png`, with `logo-white.png` for the dark footer. The browser tab icon is `favicon.png`, and `apple-touch-icon.png` is used on phones. To replace the logo, save new files with the same names.
+The logo is `assets/images/logo.png`, with `logo-white.png` for the dark footer. The browser tab icon is `favicon.png`, with `favicon-dark.png` (white) for dark mode, and `apple-touch-icon.png` is used on phones. To replace the logo, save new files with the same names.
 
 ## Photos
 In `assets/images/`. To swap one, save the new photo with the same file name.
