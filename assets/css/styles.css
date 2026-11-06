@@ -458,9 +458,9 @@ em.soft { font-style: italic; color: var(--clay); }
 .calm-band {
   position: relative; min-height: 460px; display: flex; align-items: center; padding: 40px 0;
   background:
-    url("../images/tree.jpg") left max(16px, calc(50% - 600px)) center / auto 420px no-repeat,
-    linear-gradient(90deg, #FCF7F1 calc(max(16px, 50% - 600px) + 440px), #F3E7D8 100%);
-  background-color: #FCF7F1;
+    url("../images/tree.webp") left max(16px, calc(50% - 600px)) center / auto 420px no-repeat,
+    linear-gradient(90deg, #FCF8F2 0%, #F3E7D8 100%);
+  background-color: #F7EFE5;
   border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
 }
 .calm-band .container { position: relative; display: flex; justify-content: flex-end; }
@@ -471,8 +471,8 @@ em.soft { font-style: italic; color: var(--clay); }
 @media (max-width: 960px) {
   .calm-band {
     background:
-      url("../images/tree.jpg") left 8px center / auto 340px no-repeat,
-      linear-gradient(90deg, #FCF7F1 360px, #F3E7D8 100%);
+      url("../images/tree.webp") left 8px center / auto 340px no-repeat,
+      linear-gradient(90deg, #FCF8F2 0%, #F3E7D8 100%);
   }
   .calm-band .calm-text { max-width: 46%; }
 }
@@ -480,8 +480,8 @@ em.soft { font-style: italic; color: var(--clay); }
   .calm-band {
     padding: 320px 0 40px; min-height: 0;
     background:
-      url("../images/tree.jpg") center 28px / auto 280px no-repeat,
-      linear-gradient(180deg, #FCF7F1 310px, #F3E7D8 100%);
+      url("../images/tree.webp") center 28px / auto 280px no-repeat,
+      linear-gradient(180deg, #FCF8F2 0%, #F3E7D8 100%);
   }
   .calm-band .container { justify-content: center; }
   .calm-band .calm-text { max-width: none; text-align: center; }
