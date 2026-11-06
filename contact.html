@@ -56,49 +56,18 @@
     </section>
 
     <section class="section" style="padding-top:0">
-      <div class="container contact-grid contact-grid--simple">
-        <div class="form-card" id="call">
-
-          <span class="eyebrow">How to reach us</span>
-          <h2 style="font-size:1.9rem">How can we help?</h2>
-
-          <ol class="help-steps">
-            <li>
-              <span class="step-num" aria-hidden="true">1</span>
-              <div>
-                <h3>Already a patient? Start with the portal</h3>
-                <p>Message your care team, ask about results or prescriptions, and view your records any time.</p>
-                <a class="btn btn--blue" href="#" data-portal-link><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg> Patient Portal Sign-In</a>
-              </div>
-            </li>
-            <li>
-              <span class="step-num" aria-hidden="true">2</span>
-              <div>
-                <h3>Need to talk with someone? Call us</h3>
-                <p>If we're closed, leave a message and we'll call you back.</p>
-                <div class="call-options">
-                  <a class="call-option call-option--main" href="tel:+14022490377" data-tel="office"><span class="call-option__label">Medical office</span><span class="call-option__num" data-number="office">402-249-0377</span></a>
-                  <a class="call-option" href="tel:+14029371920" data-tel="counseling"><span class="call-option__label">Counseling &amp; Psychotherapy</span><span class="call-option__num" data-number="counseling">402-937-1920</span></a>
-                </div>
-              </div>
-            </li>
-          </ol>
-          <div class="emergency" role="note">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4M12 17h.01"/></svg>
-            <div>
-              <p class="emergency__main">Medical emergency? Call <strong>911</strong>.</p>
-              <p>Mental health crisis? Call or text <strong>988</strong>, the Suicide &amp; Crisis Lifeline, any time.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="visit-card">
+      <div class="container">
+        <div class="visit-card visit-card--wide">
           <div class="photo visit-card__photo">
             <img src="assets/images/building.png" alt="The front of the Renewed Health Outreach building, a brick building with white trim and glass double doors">
             <span class="photo-caption">Look for the white double doors</span>
           </div>
           <div class="visit-card__body">
-            <span class="eyebrow">Visit us</span>
+            <div>
+              <span class="eyebrow">Visit us</span>
+              <h2 class="visit-card__title">One office, two practices</h2>
+              <p class="visit-card__intro">Our medical office and our counseling &amp; psychotherapy practice share the same building.</p>
+            </div>
             <div class="visit-row">
               <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
               <div>
@@ -114,7 +83,37 @@
                 <table class="hours-table"><tr><td>Monday – Thursday</td><td>9am – 5pm</td></tr><tr><td>Friday</td><td>9am – 12pm</td></tr><tr><td>Saturday – Sunday</td><td>Closed</td></tr></table>
               </div>
             </div>
-            <p class="visit-card__fax">Fax: <span data-number="fax">402-739-8915</span></p>
+          </div>
+        </div>
+
+        <div class="practice-grid" id="call">
+          <div class="practice-card practice-card--medical">
+            <span class="eyebrow">Medical</span>
+            <h2 class="practice-card__title">Medical office</h2>
+            <h3>Already a patient? Start with the portal</h3>
+            <p>Message your care team, ask about results or prescriptions, and view your records any time.</p>
+            <a class="btn btn--blue" href="#" data-portal-link><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg> Patient Portal Sign-In</a>
+            <h3 class="practice-card__call">Need to talk with someone? Call us</h3>
+            <p>If we're closed, leave a message and we'll call you back.</p>
+            <a class="call-option call-option--main" href="tel:+14022490377" data-tel="office"><span class="call-option__label">Medical office</span><span class="call-option__num" data-number="office">402-249-0377</span></a>
+            <p class="practice-card__fax">Fax: <span data-number="fax">402-739-8915</span></p>
+          </div>
+
+          <div class="practice-card practice-card--counseling">
+            <span class="eyebrow">Counseling &amp; Psychotherapy</span>
+            <h2 class="practice-card__title">Counseling &amp; Psychotherapy</h2>
+            <h3>Appointments and questions</h3>
+            <p>Call to schedule or to ask about counseling and psychotherapy. If no one answers, leave a message and we'll call you back.</p>
+            <a class="call-option" href="tel:+14029371920" data-tel="counseling"><span class="call-option__label">Counseling &amp; Psychotherapy</span><span class="call-option__num" data-number="counseling">402-937-1920</span></a>
+            <p class="practice-card__fax">Fax: <span data-number="counselingFax">402-383-9099</span></p>
+          </div>
+        </div>
+
+        <div class="emergency" role="note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4M12 17h.01"/></svg>
+          <div>
+            <p class="emergency__main">Medical emergency? Call <strong>911</strong>.</p>
+            <p>Mental health crisis? Call or text <strong>988</strong>, the Suicide &amp; Crisis Lifeline, any time.</p>
           </div>
         </div>
       </div>

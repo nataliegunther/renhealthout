@@ -2,7 +2,7 @@
   var cfg = window.SITE_CONFIG || {};
 
   /* ---------- Phone and fax numbers from site-config.js ---------- */
-  var numbers = { office: cfg.officePhone, counseling: cfg.counselingPhone, fax: cfg.fax };
+  var numbers = { office: cfg.officePhone, counseling: cfg.counselingPhone, fax: cfg.fax, counselingFax: cfg.counselingFax };
   document.querySelectorAll("[data-number]").forEach(function (el) {
     var n = numbers[el.getAttribute("data-number")];
     if (n) el.textContent = n;

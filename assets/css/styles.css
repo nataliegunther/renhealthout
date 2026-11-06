@@ -473,17 +473,34 @@ em.soft { font-style: italic; color: var(--clay); }
   .calm-band::before { background: linear-gradient(180deg, rgba(252,248,242,0) 30%, rgba(252,248,242,.92) 65%); }
 }
 
-/* ---------- Contact page: simplified two-card layout ---------- */
-.contact-grid--simple { grid-template-columns: 1.15fr 1fr; }
-@media (max-width: 900px) { .contact-grid--simple { grid-template-columns: 1fr; } }
+
+/* ---------- Contact page: shared visit card + one card per practice ---------- */
 .visit-card { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; }
-.visit-card__photo { border-radius: 0; box-shadow: none; aspect-ratio: 16 / 9; }
-.visit-card__body { padding: clamp(24px, 4vw, 36px); display: grid; gap: 22px; }
-.visit-card__body .eyebrow { margin-bottom: -6px; }
+.visit-card--wide { display: grid; grid-template-columns: 1fr 1fr; }
+.visit-card__photo { border-radius: 0; box-shadow: none; aspect-ratio: auto; min-height: 260px; }
+.visit-card__body { padding: clamp(24px, 4vw, 40px); display: grid; gap: 22px; align-content: start; }
+.visit-card__title { font-size: 1.9rem; margin: 0 0 .25em; }
+.visit-card__intro { margin: 0; color: var(--muted); }
 .visit-row { display: grid; grid-template-columns: 44px 1fr; gap: 14px; }
 .visit-row .ico { width: 44px; height: 44px; border-radius: 14px; background: var(--blue-soft); color: var(--blue); display: grid; place-items: center; }
 .visit-row .ico svg { width: 20px; height: 20px; }
 .visit-row strong { display: block; color: var(--blue-dark); }
 .visit-row > div > span { display: block; color: var(--muted); }
 .visit-card__dir { margin-top: 12px; padding: .55em 1.1em; font-size: .95rem; }
-.visit-card__fax { margin: 0; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: .95rem; }
+@media (max-width: 860px) {
+  .visit-card--wide { grid-template-columns: 1fr; }
+  .visit-card__photo { aspect-ratio: 16 / 9; min-height: 0; }
+}
+
+.practice-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 24px; align-items: stretch; }
+@media (max-width: 860px) { .practice-grid { grid-template-columns: 1fr; } }
+.practice-card { background: var(--white); border: 1px solid var(--line); border-top: 6px solid var(--clay); border-radius: var(--radius-lg); padding: clamp(24px, 4vw, 36px); display: flex; flex-direction: column; align-items: flex-start; }
+.practice-card--counseling { border-top-color: var(--sage); }
+.practice-card__title { font-size: 1.7rem; margin: 0 0 18px; }
+.practice-card h3 { font-size: 1.1rem; margin: 0 0 .3em; }
+.practice-card p { margin: 0 0 14px; color: var(--muted); }
+.practice-card .btn { white-space: nowrap; }
+.practice-card .btn svg { width: 18px; height: 18px; }
+.practice-card .call-option { align-self: stretch; }
+.practice-card h3.practice-card__call { margin-top: 26px; padding-top: 22px; border-top: 1px solid var(--line); align-self: stretch; }
+.practice-card p.practice-card__fax { margin: auto 0 0; padding-top: 18px; font-size: .95rem; }
