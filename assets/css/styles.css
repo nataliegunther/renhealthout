@@ -504,3 +504,17 @@ em.soft { font-style: italic; color: var(--clay); }
 .practice-card .call-option { align-self: stretch; }
 .practice-card h3.practice-card__call { margin-top: 26px; padding-top: 22px; border-top: 1px solid var(--line); align-self: stretch; }
 .practice-card p.practice-card__fax { margin: auto 0 0; padding-top: 18px; font-size: .95rem; }
+
+/* Same row style for portal, phone, and fax in both practice cards */
+.contact-rows { list-style: none; margin: 4px 0 0; padding: 0; align-self: stretch; border-top: 1px solid var(--line); }
+.contact-rows li { display: grid; grid-template-columns: 40px 1fr auto; align-items: center; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.contact-rows .ico { width: 40px; height: 40px; border-radius: 12px; background: var(--blue-soft); color: var(--blue); display: grid; place-items: center; }
+.contact-rows .ico svg { width: 18px; height: 18px; }
+.contact-rows__label { font-weight: 600; color: var(--blue-dark); }
+.contact-rows__value { font-weight: 700; color: var(--clay); text-decoration: none; white-space: nowrap; }
+a.contact-rows__value:hover { color: var(--clay-dark); text-decoration: underline; }
+.contact-rows__value--plain { color: var(--ink); font-weight: 600; }
+.practice-card p.practice-card__note { margin: 16px 0 0; font-size: .95rem; }
+.visit-row .hours-table td { white-space: nowrap; }
+.visit-row .hours-table td:first-child { padding-right: 12px; }
+@media (max-width: 420px) { .visit-row .hours-table td { font-size: .92rem; } }
