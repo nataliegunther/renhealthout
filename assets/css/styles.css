@@ -384,6 +384,9 @@ em.soft { font-style: italic; color: var(--clay); }
 .call-option:hover { border-color: var(--clay); background: var(--white); }
 .call-option__label { font-weight: 600; color: var(--blue-dark); }
 .call-option__num { font-weight: 700; color: var(--clay); white-space: nowrap; }
+.call-option--main { background: var(--clay); border-color: var(--clay); box-shadow: 0 6px 18px rgba(169, 83, 47, .25); }
+.call-option--main:hover { background: var(--clay-dark); border-color: var(--clay-dark); }
+.call-option--main .call-option__label, .call-option--main .call-option__num { color: var(--white); }
 .notice--warm { background: var(--clay-soft); color: #6B331C; }
 
 .map { border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--line); aspect-ratio: 16 / 7; background: var(--linen); }
