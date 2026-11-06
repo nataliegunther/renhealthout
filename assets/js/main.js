@@ -1,6 +1,17 @@
 (function () {
   var cfg = window.SITE_CONFIG || {};
 
+  /* ---------- Phone and fax numbers from site-config.js ---------- */
+  var numbers = { office: cfg.officePhone, counseling: cfg.counselingPhone, fax: cfg.fax };
+  document.querySelectorAll("[data-number]").forEach(function (el) {
+    var n = numbers[el.getAttribute("data-number")];
+    if (n) el.textContent = n;
+  });
+  document.querySelectorAll("[data-tel]").forEach(function (a) {
+    var digits = (numbers[a.getAttribute("data-tel")] || "").replace(/\D/g, "");
+    if (digits.length === 10) a.href = "tel:+1" + digits;
+  });
+
   /* ---------- Mobile menu ---------- */
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("site-nav");
@@ -44,7 +55,7 @@
   }
 
   wire("[data-portal-link]", cfg.portalUrl,
-    "Our patient portal link is coming soon. Please call 402-249-0377 for help.");
+    "Our patient portal link is coming soon. Please call " + (cfg.officePhone || "our office") + " for help.");
 
   /* ---------- Weave Text Connect chat bubble ---------- */
   if (cfg.weaveTextConnectSrc) {
