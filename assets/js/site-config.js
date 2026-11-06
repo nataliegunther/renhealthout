@@ -9,6 +9,7 @@ window.SITE_CONFIG = {
   officePhone: "402-249-0377",
   counselingPhone: "402-937-1920",
   fax: "402-739-8915",
+  counselingFax: "402-383-9099",
 
   // InSync "inTouch" patient portal sign-in address.
   // Get the exact link from InSync — it usually looks like
