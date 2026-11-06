@@ -12,7 +12,7 @@ A plain HTML/CSS website (no build step) designed to be hosted free on **GitHub 
 | `contact.html` | Contact, map, portal |
 
 ## Phone numbers and Patient Portal link
-The office phone, counseling phone, fax number, and InSync sign-in address are all set in **`assets/js/site-config.js`** (`officePhone`, `counselingPhone`, `fax`, `portalUrl`). Change them there and every page updates, including the tap-to-call links. The one exception is the Google search description at the top of `contact.html`, which lists the office phone and must be changed by hand.
+The office phone, counseling phone, medical fax, counseling fax, and InSync sign-in address are all set in **`assets/js/site-config.js`** (`officePhone`, `counselingPhone`, `fax`, `counselingFax`, `portalUrl`). Change them there and every page updates, including the tap-to-call links. The one exception is the Google search description at the top of `contact.html`, which lists the office phone and must be changed by hand.
 
 That file also has an optional `weaveTextConnectSrc` setting for a Weave chat bubble, which is currently blank.
 
