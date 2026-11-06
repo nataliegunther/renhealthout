@@ -360,6 +360,30 @@ em.soft { font-style: italic; color: var(--clay); }
   border-radius: var(--radius); padding: 16px 18px; font-size: .92rem; line-height: 1.55; margin-top: 16px;
 }
 .notice svg { width: 20px; height: 20px; flex: none; margin-top: 2px; }
+.emergency {
+  display: flex; gap: 14px; background: #FDF0EC; color: #5C1F14; border: 1px solid #F0C9BD; border-left: 5px solid #B3261E;
+  border-radius: var(--radius); padding: 18px 20px; margin-bottom: 28px; line-height: 1.5;
+}
+.emergency svg { width: 24px; height: 24px; flex: none; margin-top: 2px; color: #B3261E; }
+.emergency p { margin: 0 0 4px; }
+.emergency strong { color: #8A1C12; }
+.emergency__main { font-size: 1.2rem; font-weight: 700; color: #8A1C12; }
+.help-steps { list-style: none; padding: 0; margin: 22px 0 0; display: grid; gap: 24px; }
+.help-steps > li { display: grid; grid-template-columns: 36px 1fr; gap: 14px; padding-top: 24px; border-top: 1px solid var(--line); }
+.help-steps > li:first-child { border-top: 0; padding-top: 0; }
+.step-num { width: 36px; height: 36px; border-radius: 50%; background: var(--blue-soft); color: var(--blue-dark); display: grid; place-items: center; font-weight: 700; }
+.help-steps h3 { font-size: 1.2rem; margin: 5px 0 6px; color: var(--blue-dark); }
+.help-steps p { color: var(--muted); margin: 0 0 14px; }
+.help-steps .btn { white-space: nowrap; }
+.help-steps .btn svg { width: 18px; height: 18px; }
+.call-options { display: grid; gap: 10px; }
+.call-option {
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 4px 14px;
+  padding: 14px 16px; border: 1px solid var(--sand); border-radius: var(--radius); text-decoration: none; background: var(--cream);
+}
+.call-option:hover { border-color: var(--clay); background: var(--white); }
+.call-option__label { font-weight: 600; color: var(--blue-dark); }
+.call-option__num { font-weight: 700; color: var(--clay); white-space: nowrap; }
 .notice--warm { background: var(--clay-soft); color: #6B331C; }
 
 .map { border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--line); aspect-ratio: 16 / 7; background: var(--linen); }

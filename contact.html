@@ -89,23 +89,38 @@
         </div>
 
         <div class="form-card" id="call">
-          <span class="eyebrow">Call us</span>
+          <div class="emergency" role="note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4M12 17h.01"/></svg>
+            <div>
+              <p class="emergency__main">Medical emergency? Call <strong>911</strong>.</p>
+              <p>Mental health crisis? Call or text <strong>988</strong>, the Suicide &amp; Crisis Lifeline, any time.</p>
+            </div>
+          </div>
+
+          <span class="eyebrow">How to reach us</span>
           <h2 style="font-size:1.9rem">How can we help?</h2>
-          <p style="color:var(--muted)">The quickest way to reach us is by phone. If you call when we're closed, leave a message and we'll get back to you as quickly as we can.</p>
 
-          <div class="btn-row">
-            <a class="btn btn--primary" href="tel:+14022490377" data-tel="office">Office: <span data-number="office">402-249-0377</span></a>
-            <a class="btn btn--ghost" href="tel:+14029371920" data-tel="counseling">Counseling: <span data-number="counseling">402-937-1920</span></a>
-          </div>
-
-          <div class="notice">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
-            <span><strong>Existing patients:</strong> for questions about your care, results, or prescriptions, please use the <a href="#" data-portal-link>Patient Portal</a>.</span>
-          </div>
-          <div class="notice notice--warm">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4M12 17h.01"/></svg>
-            <span>If you're in crisis, call or text <strong>988</strong>. For a medical emergency, call <strong>911</strong>.</span>
-          </div>
+          <ol class="help-steps">
+            <li>
+              <span class="step-num" aria-hidden="true">1</span>
+              <div>
+                <h3>Already a patient? Start with the portal</h3>
+                <p>Message your care team, ask about results or prescriptions, and view your records any time.</p>
+                <a class="btn btn--blue" href="#" data-portal-link><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg> Patient Portal Sign-In</a>
+              </div>
+            </li>
+            <li>
+              <span class="step-num" aria-hidden="true">2</span>
+              <div>
+                <h3>Need to talk with someone? Call us</h3>
+                <p>If we're closed, leave a message and we'll call you back.</p>
+                <div class="call-options">
+                  <a class="call-option" href="tel:+14022490377" data-tel="office"><span class="call-option__label">Medical office</span><span class="call-option__num" data-number="office">402-249-0377</span></a>
+                  <a class="call-option" href="tel:+14029371920" data-tel="counseling"><span class="call-option__label">Counseling &amp; psychotherapy scheduling</span><span class="call-option__num" data-number="counseling">402-937-1920</span></a>
+                </div>
+              </div>
+            </li>
+          </ol>
         </div>
       </div>
     </section>
@@ -173,7 +188,7 @@
       </div>
       <div class="footer-bottom">
         <span>© <span data-year>2026</span> Renewed Health Outreach, LLC</span>
-        <span class="crisis">In crisis? Call or text <strong>988</strong> anytime. In an emergency, call 911.</span>
+        <span class="crisis">Medical emergency? Call <strong>911</strong>. Mental health crisis? Call or text <strong>988</strong>, any time.</span>
       </div>
     </div>
   </footer>
